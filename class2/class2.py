@@ -57,4 +57,4 @@ print(bool(-1))  # True
 a = input("請輸入數字:")
 # 透過input()輸入的資料都是字串
 print(a + "1")  # 字串相加
-print(int(a) * 300)  # 將字串轉換成整數再相加
+print(int(a) * 30)  # 將字串轉換成整數再相加
