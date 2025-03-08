@@ -48,6 +48,13 @@ print("------------------------")
 
 print(bool(123))  # True
 print(bool(0))  # False
-print(bool("hello"))  # True
 print(bool(" "))  # False
-print("------------------------")
+print(bool("0"))  # True
+print(bool(-1))  # True
+
+# input()讓使用者在終端機輸入資料
+# input()的括弧內可以放入"提示字串"
+a = input("請輸入數字:")
+# 透過input()輸入的資料都是字串
+print(a + "1")  # 字串相加
+print(int(a) * 300)  # 將字串轉換成整數再相加
