@@ -1,4 +1,3 @@
-# class3
 # try except
 # 錯誤處理
 try:
