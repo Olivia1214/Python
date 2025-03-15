@@ -55,14 +55,15 @@ else:
 # if elif else 是連續的判斷，只要有一個條件成立，後面的條件就不會執行
 # if 一定要有，elif可以有多個但是選用，else只能有一個但是選用
 
-grade = input("請輸入成績(EX:90-100):")
-if grade == "90-100":
+grade = int(input("請輸入成績:"))
+
+if grade >= 90:
     print("你的成績為A")
-elif grade == "80-89":
+elif grade >= 80:
     print("你的成績為B")
-elif grade == "70-79":
+elif grade >= 70:
     print("你的成績為C")
-elif grade == "60-69":
+elif grade >= 60:
     print("你的成績為D")
 else:
     print("你的成績為E")
