@@ -1,8 +1,11 @@
-try:
-    h = float(input("請輸入身高(公尺):"))
-    w = float(input("請輸入體重(公斤):"))
-    bmi = w / h**2
-    print(f"你的BMI為:{bmi}")
-
-except:
-    print("請輸入有效的數字")
+grade = input("請輸入成績(EX:90-100):")
+if grade == "90-100":
+    print("你的成績為A")
+elif grade == "80-89":
+    print("你的成績為B")
+elif grade == "70-79":
+    print("你的成績為C")
+elif grade == "60-69":
+    print("你的成績為D")
+else:
+    print("你的成績為E")
