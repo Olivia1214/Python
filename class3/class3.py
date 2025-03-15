@@ -47,12 +47,8 @@ print(not False)  # True, not False
 password = input("請輸入密碼:")
 if password == "1214":
     print("歡迎光臨Olivia")
-elif password == "0428":
-    print("歡迎光臨Viola")
-elif password == "0603":
-    print("歡迎光臨Winston")
-elif password == "0922":
-    print("歡迎光臨Jennifer")
+elif password == "4121":
+    print("歡迎光臨Aivilo")
 else:
     print("密碼錯誤")
 
