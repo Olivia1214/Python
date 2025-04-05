@@ -1,12 +1,7 @@
-grade = int(input("請輸入成績:"))
-
-if grade == 90 - 100:
-    print("你的成績為A")
-elif grade == 80 - 89:
-    print("你的成績為B")
-elif grade == 70 - 79:
-    print("你的成績為C")
-elif grade == 60 - 69:
-    print("你的成績為D")
+password = input("請輸入密碼:")
+if password == "1214":
+    print("歡迎光臨Olivia")
+elif password == "4121":
+    print("歡迎光臨Aivilo")
 else:
-    print("你的成績為E")
+    print("密碼錯誤")
