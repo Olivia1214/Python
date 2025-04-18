@@ -5,6 +5,10 @@ t.speed(5)
 
 t.penup()
 t.forward(200)
+t.penup()
+t.right(90)
+t.forward(75)
+t.left(90)
 
 for i in range(8):
     t.stamp()
