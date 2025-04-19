@@ -36,3 +36,16 @@ for j in range(60):
     t.clear()
 
 t.done()
+
+n = int(input("請輸入正整數："))
+for i in range(1, n + 1):
+    if i % 3 == 0 or i % 7 == 0:
+        print(i)
+
+n = int(input("請輸入箭頭大小："))
+for i in range(1, n + 1):
+    print(f" " * (n - i) + "*" * (2 * i - 1))
+    # 這時會印出空格加上*的結果
+
+for i in range(1, n + 1):
+    print(f" " * (n - 1) + "*")
