@@ -1,7 +1,7 @@
 import turtle as t
 
 t.color("black")
-t.speed(5)
+t.speed(10)
 
 t.penup()
 t.forward(200)
