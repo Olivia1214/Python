@@ -1,4 +1,3 @@
-
 import time
 
 t = int(input("請輸入倒數計時的時間(秒)："))
