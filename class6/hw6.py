@@ -6,6 +6,5 @@ total = 0
 n = int(input("請輸入商品價格："))
 while n != 0:
     total += n
+    print("總金額為：", total)
     n = int(input("請輸入商品價格："))
-
-print("總金額為：", total)
