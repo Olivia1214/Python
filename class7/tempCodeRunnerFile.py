@@ -1,6 +1,9 @@
-n = int(input("請輸入整數："))
-for i in range(2, n):
-    if n % i == 0:
-        print(i)
-if n % i != 0:
-    print("此為質數")
+
+import time
+
+t = int(input("請輸入倒數計時的時間(秒)："))
+for i in range(t, -1, -1):
+    print(i)
+    time.sleep(1)
+else:
+    print("時間到！")
