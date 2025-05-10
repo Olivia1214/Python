@@ -74,11 +74,11 @@ while b != 4:
     try:
         b = int(input("請輸入你的選擇(編號): "))
         if b == 1:
-            print("你的選擇是蘋果汁")
+            print(f"你的選擇是{j_l[0]}")
         elif b == 2:
-            print("你的選擇是柳橙汁")
+            print(f"你的選擇是{j_l[1]}")
         elif b == 3:
-            print("你的選擇是葡萄汁")
+            print(f"你的選擇是{j_l[2]}")
         elif b == 4:
             break
         else:
