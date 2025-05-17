@@ -30,10 +30,12 @@ g = int(input(f"請輸入你的猜測({low}~{high}):"))
 while g != n:
     if n > g:
         print("再大一點")
-        low = g
+        if g > low:
+            low = g
     elif n < g:
         print("再小一點")
-        high = g
+        if g < high:
+            high = g
     g = int(input(f"請輸入你的猜測({low}~{high}):"))
 
 print("恭喜猜中了")
