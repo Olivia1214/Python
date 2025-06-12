@@ -1,19 +1,15 @@
-import random as r
-
-# 數字猜測遊戲(需提示再大一點或小一點)(需要提示縮小過後的輸入範圍)
-low = 1
-high = 100
-n = r.randint(1, 100)
-g = int(input(f"請輸入你的猜測({low}~{high}):"))
-while g != n:
-    if n > g:
-        print("再大一點")
-        if g > low:
-            low = g
-    elif n < g:
-        print("再小一點")
-        if g < high:
-            high = g
-    g = int(input(f"請輸入你的猜測({low}~{high}):"))
-
-print("恭喜猜中了")
+j_l = ["蘋果汁", "柳橙汁", "葡萄汁", "楊桃汁", "系統關閉"]
+b = 0
+while b != len(j_l):
+    for i in range(len(j_l)):
+        print(f"{i + 1}.{j_l[i]}")
+    try:
+        b = int(input("請輸入你的選擇(編號): "))
+        if b < len(j_l):
+            print(f"你的選擇是{j_l[b-1]}")
+        elif b == len(j_l):
+            break
+        else:
+            print("輸入錯誤, 請重新輸入")
+    except:
+        print("輸入錯誤, 請重新輸入")

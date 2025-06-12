@@ -1,18 +1,3 @@
-# append 在程式執行過程中可以將資料加入列表最後面
-L = ["Hello", "World"]
-L.append("Python")  # 加入Python
-print(L)  # ['Hello', 'World', 'Python']
-
-# insert 在程式執行過程中可以將資料加入列表指定位置
-L = ["Hello", "World"]
-L.insert(1, "Python")  # 加入Python
-print(L)  # ['Hello', 'Python', 'World']
-
-# 修改特定位置的資料
-L = ["Hello", "World"]
-L[1] = "Python"  # 將索引1的資料改為Python
-print(L)  # ['Hello', 'Python']
-
 w = ["晴天", "多雲", "雨天", "晴天", "多雲", "雷陣雨", "雨天"]
 print(w)
 
