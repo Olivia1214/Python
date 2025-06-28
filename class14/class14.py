@@ -67,4 +67,29 @@ def hello(name, message="Hello"):
 
 # 如果是 def hello(message = "Hello", name), 則會出現錯誤, 因為有預設值的參數必須放在沒有預設值的參數後面
 hello("Olivia Ko")
-hello("Viola Ko", "Good Morning")
+hello("Viola Ko", "Hello")
+
+# def 區域變數與全域變數
+length = 5  # 全域變數
+
+
+def calculate_square_area():
+    area = length**2  # length是全域變數, area是區域變數
+    # length = length + 1 # 這行會出錯
+    # 因為在函數內部 length 是區域變數, 不能直接修改全域變數
+    print("面積是", area)
+
+
+calculate_square_area()
+# print("長度是", area) # 這行會出錯, 因為 area 是區域變數, 只能在函數內部使用
+
+length = 5  # 全域變數
+
+
+def calculate_square_area():
+    area = length**2  # length是全域變數, area是區域變數
+    print("面積是", area)
+
+
+length = 10  # 全域變數
+calculate_square_area()  # 面積是 100
