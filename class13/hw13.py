@@ -24,30 +24,30 @@ while True:
         print("請輸入水果名稱和價格")
         name = input("請輸入水果名稱: ")
         price = input("請輸入水果價格: ")
-        fruits[name] = int(price)
+        fruits[name] = int(price)  # 將水果名稱和價格加入水果清單
         print(f"新增水果 {name} 成功")
         print(fruits)
-    elif choice == "2":
+    elif choice == "2":  # 修改水果
         print("請輸入水果名稱")
         name = input("請輸入水果名稱: ")
-        if name in fruits:
+        if name in fruits:  # 判斷是否存在水果
             price = input("請輸入水果價格: ")
-            fruits[name] = int(price)
+            fruits[name] = int(price)  # 修改水果價格
             print(f"修改水果 {name} 成功")
             print(fruits)
         else:
-            print("此水果不存在")
+            print("此水果不存在")  # 判斷是否存在水果
     elif choice == "3":
         print("請輸入水果名稱")
         name = input("請輸入水果名稱: ")
-        if name in fruits:
-            del fruits[name]
+        if name in fruits:  # 判斷是否存在水果
+            del fruits[name]  # 刪除水果
             print(f"刪除水果 {name} 成功")
             print(fruits)
         else:
             print("此水果不存在")
-    elif choice == "4":
+    elif choice == "4":  # 離開系統
         print("再見!")
-        break
+        break  # 離開系統
     else:
-        print("請輸入有效的功能")
+        print("請輸入有效的功能")  # 判斷是否是有效的功能
